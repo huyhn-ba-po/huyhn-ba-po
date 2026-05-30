@@ -12,6 +12,7 @@
   <a href="https://www.linkedin.com/in/nhathuyba/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white&style=flat-square" /></a>
   <img src="https://img.shields.io/badge/Domain-Fintech_%7C_Digital_Banking-1f6feb?style=flat-square" />
   <img src="https://img.shields.io/badge/Cert-CBAP-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/Framework-BABOK_v3-8E44AD?style=flat-square" />
   <img src="https://komarev.com/ghpvc/?username=huyhn-ba-po&color=blueviolet&style=flat-square&label=Profile+Views" />
 </p>
 
@@ -22,20 +23,44 @@
 - 🏦 **Fintech & Digital Banking** — SME iBanking, payments, cross-border transfer, e-KYC, compliance
 - 📐 **Requirements Engineering** — URD / SRS / BPMN / UML / User Stories at enterprise scale
 - ⚡ **Process Optimization** — Re-design banking workflows for speed, accuracy, and audit-readiness
-- 🤖 **AI Skills for BA** — Building Claude AI Skills that compress days of documentation into minutes
+- 🤖 **AI Skills for BA** — Building Claude AI Skills **grounded in BABOK v3 techniques** that compress days of BA documentation into minutes
 
 ---
 
-### 🛠️ Featured Repositories — Claude AI Skills for BA
+### 🧩 Claude AI Skills for BA — grounded in BABOK v3
 
-| Skill | What it does |
-|---|---|
-| 📝 [`use-case-writer`](https://github.com/huyhn-ba-po/use-case-writer) | Draft Use Case Specs in the 13-field **Karl Wiegers / IIBA** template |
-| 🔀 [`activity-diagram-builder`](https://github.com/huyhn-ba-po/activity-diagram-builder-) | Generate **UML Activity Diagrams** from plain-text process descriptions |
-| 🔁 [`mermaid-sequence-diagram`](https://github.com/huyhn-ba-po/mermaid-sequence-diagram-) | Build **Mermaid Sequence Diagrams** for system interactions & API flows |
-| 🖥️ [`screen-description-writer`](https://github.com/huyhn-ba-po/screen-description-writer-) | Document **screen specifications & UI behavior** for SRS deliverables |
+Each skill implements a **BABOK v3 technique** (structured as *Purpose → Description → Elements → Usage Considerations*) and runs from natural-language prompts in Claude Code / Cursor / any `SKILL.md`-compatible agent.
 
-> Each skill is designed to plug into Claude Code / Cursor and run from natural-language prompts — built for BAs who ship specs at banking scale.
+**📐 Modelling & Diagrams**
+
+| Skill | BABOK technique | What it does |
+|---|---|---|
+| 🔀 [`activity-diagram-builder`](https://github.com/huyhn-ba-po/activity-diagram-builder-) | Process Modelling (§10.35) | Generate an Activity Diagram / User Flow (`.drawio`) — participants, trigger, activities, decisions, flows, result |
+| 🔁 [`mermaid-sequence-diagram`](https://github.com/huyhn-ba-po/mermaid-sequence-diagram-) | Sequence Diagrams (§10.42) | Refine a usage scenario into a Mermaid sequence diagram — objects, lifelines, messages (sync/async/return) |
+
+**🖥️ Specification**
+
+| Skill | BABOK technique | What it does |
+|---|---|---|
+| 🖥️ [`screen-description-writer`](https://github.com/huyhn-ba-po/screen-description-writer-) | Interface Analysis (§10.24) + Data Dictionary (§10.12) | Spec a screen from a prototype — Interface definition + a Data Dictionary of its data elements |
+| ⚙️ [`nfr-analyzer`](https://github.com/huyhn-ba-po/nfr-analyzer) | Non-Functional Requirements Analysis (§10.30) | Capture NFRs across 15 quality-attribute categories, quantified and verifiable |
+
+**📝 Requirements**
+
+| Skill | BABOK technique | What it does |
+|---|---|---|
+| 📌 [`user-story-writer`](https://github.com/huyhn-ba-po/user-story-writer) | User Stories (§10.48) | Write `As a <who>, I need to <what>, so that <why>` stories with acceptance criteria |
+| ✅ [`acceptance-criteria-writer`](https://github.com/huyhn-ba-po/acceptance-criteria-writer) | Acceptance & Evaluation Criteria (§10.1) | Write testable acceptance (pass/fail) and evaluation (ranking) criteria from value attributes |
+| 📋 [`business-rules-analyzer`](https://github.com/huyhn-ba-po/business-rules-analyzer) | Business Rules Analysis (§10.9) | Capture & classify business rules (definitional vs behavioural) in atomic, declarative form |
+| 📄 [`use-case-writer`](https://github.com/huyhn-ba-po/use-case-writer) | Use Cases and Scenarios (§10.47) | Draft Use Case specs in the 13-field Karl Wiegers / IIBA template |
+
+**👥 Stakeholders**
+
+| Skill | BABOK technique | What it does |
+|---|---|---|
+| 👥 [`stakeholder-analysis`](https://github.com/huyhn-ba-po/stakeholder-analysis) | Stakeholder List, Map, or Personas (§10.43) | Build a stakeholder list, influence×interest matrix, onion diagram, RACI matrix, and personas |
+
+> Every skill is a self-contained `SKILL.md` + `README.md`, written in Vietnamese with BABOK terminology kept in English — plug it into a Claude Project or any agent and drive it from plain prompts.
 
 ---
 
@@ -43,6 +68,7 @@
 
 **Business Analysis**
 <br/>
+![BABOK](https://img.shields.io/badge/BABOK_v3-8E44AD?style=flat-square)
 ![BPMN](https://img.shields.io/badge/BPMN_2.0-FF6F00?style=flat-square)
 ![UML](https://img.shields.io/badge/UML-2C3E50?style=flat-square)
 ![Use Case](https://img.shields.io/badge/Use_Case-IIBA-006400?style=flat-square)
